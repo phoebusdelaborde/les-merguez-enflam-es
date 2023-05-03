@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/style.css"rel="stylesheet"/> 
-    <title>Document</title>
-</head>
-<body>
-  
-  <div class="flexbox">
+<link href="./css/style.css"rel="stylesheet"/> 
+<div class="flexbox">
     <nav>
         <ul>
             <li class="menu-deroulant">
@@ -27,132 +17,124 @@
       <h1 class="class4">Les Merguez Enflammées</h1>
       </div>
       <br>
-    <div class="flexbox">
-        <nav>
-            <ul>
-                <li><a href="accueill.html">Accueil</a></li>
-                <li><a href="match.html">prochains match</a></li>
-                <li class="menu-deroulant">
-                    <a href="#">resultats</a>
-                    <ul class="sous-menu">
-                        <li><a href="resulta.html">video</a></li>
-                        <li><a href="photo.html">photo</a></li>
-                        <li><a href="grand.html">grand tournoi</a></li>
-                        </ul>
-                        </li>
-            </ul>
-        </nav>
-            </div>
-
-
-
-            <div class="slideshow-container">
-                <div class="slideshow">
-                  <img src="1 (8).JPG" alt="Image 1>
-                  <div class="caption">premier match</div>
-                  <img src="DSC01687.JPG" alt="Image 2">
-                  <div class="caption">deuxieme match</div>
-                  <img src="3 (1).JPG" alt="Image 3">
-                  <div class="caption">troisieme match</div>
-                  <img src="DSC02567.JPG" alt="Image 1">
-                  <div class="caption">quatrieme match</div>
-                  <img src="DSC03198.JPG" alt="Image 2">
-                  <div class="caption">cinqieme match</div>
-                  <img src="DSC03243.JPG" alt="Image 2">
-                  <div class="caption">cinqieme match</div>
-                  <img src="DSC03594.JPG" alt="sixieme match">
-                  <div class="caption">sixieme match</div>
+        <div class="flexbox">
+            <nav>
+                <ul>
+                    <li><a href="accueill.html">Accueil</a></li>
+                    <li><a href="match.html">prochains matchs</a></li>
+                    <li class="menu-deroulant">
+                        <a href="#">resultats</a>
+                        <ul class="sous-menu">
+                            <li><a href="resulta.html">video</a></li>
+                            <li><a href="photo.html">photo</a></li>
+                            <li><a href="grand.html">grand tournoi</a></li>
+                          
+                            </ul>
+                            </li>
+                </ul>
+            </nav>
                 </div>
-              
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-              </div>
-              <style>
-                .slideshow-container {
-  position: relative;
+    <br>
+    <br>
+<header>
+    <h1>Photos des matchs</h1>
+</header>
+<main>
+    <p>Quel photo ?</p>
 
+    <select id="input"><option value="a">Audric</option> <option value="g">Gabrielle</option>
+         <option value="j">Jeanne</option> <option value="lu">Lucie</option> 
+         <option value="le">Léonie</option> <option value="u">Ulysse</option>
+        <option value="t">toutes</option></select>
+    <br>
+    <button id="button">OK</button>
+    
+    
+    <style>
+      #input{
+        font-size:20px;
+      border:3px solid black;
+      border-radius: 10px;
+      margin: 0 auto; /* Centrer l'élément horizontalement */
+  display: block; /* Afficher l'élément en tant que bloc pour centrer verticalement */
+    }
+      #button{
+        background-color:#23F51A;
+        border:1px solid #23F51A;
+        border-radius: 50px;
+        font-size:20px;
+      }
+      </style>
+      <script>
+        
+        let button = document.getElementById("button");
+    
+        button.addEventListener('click', function papa() {
+            let input = document.getElementById("input").value;
+    if(input === "a") {
+        window.location.href = "404.html";
+    }else if(input === "g") {
+        window.location.href = "404.html";
+    }else if(input === "j") {
+        window.location.href = "404.html";
+    }else if(input === "lu") {
+        window.location.href = "404.html";
+    }else if(input === "le") {
+        window.location.href = "404.html";
+    }else if(input === "u") {
+        window.location.href = "404.html";
+    }else if(input === "t") {
+        window.location.href = "toutes.html";
+    }
+    
+        });
+      </script>
+
+
+
+    <style>
+        body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
 }
 
-.slideshow {
-  display: flex;
-  overflow: hidden;
+header {
+background-color: #333;
+color: #fff;
+padding: 20px;
 }
 
-.slideshow img {
-  width: 100%;
-  height: auto;
+h1 {
+margin: 0;
 }
 
-.caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  font-size: 16px;
-  text-align: center;
+main {
+margin: 50px auto;
+text-align: center;
 }
 
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  padding: 16px;
-  color: #fff;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 5px 5px 0;
-  background-color: rgba(0, 0, 0, 0.5);
+p {
+font-size: 24px;
 }
 
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+.btn-group {
+display: inline-block;
 }
 
-.prev {
-  left: 0;
+.btn {
+display: inline-block;
+background-color: #333;
+color: #fff;
+padding: 10px 20px;
+margin: 10px;
+border-radius: 5px;
+text-decoration: none;
+transition: all 0.3s ease;
 }
 
-.next {
-  right: 0;
+.btn:hover {
+background-color: #fff;
+color: #333;
 }
-
-              </style>
-              <script>
-                var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slideshow")[0].getElementsByTagName("img");
-  var captions = document.getElementsByClassName("slideshow")[0].getElementsByClassName("caption");
-
-  if (n > slides.length) {
-    slideIndex = 1;
-  } else if (n < 1) {
-    slideIndex = slides.length;
-  }
-
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-    captions[i].style.display = "none";
-  }
-
-  slides[slideIndex-1].style.display = "block";
-  captions[slideIndex-1].style.display = "block";
-}
-
-              </script>
-              
-
-</body>
-</html>
+</style>
