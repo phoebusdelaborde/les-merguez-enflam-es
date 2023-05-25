@@ -14,22 +14,39 @@
 <body class="p-3 m-0 border-0 bd-example">
 
 
-<div class="container-fluid" style="display: flex;">
-  <div class="row">
-  <ul class="nav nav-tabs">
+<style>
+  .menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  flex-grow: 1;
+  text-align: center;
+}
+.menuin {
+  flex-grow: 1;
+  text-align: center;
+}
+</style>
+
+  <ul class="nav nav-tabs menu" >
     <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle col" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Années</a>
-      <ul class="dropdown-menu">
+      <a class="nav-link dropdown-toggle col" data-bs-toggle="dropdown" href="#" role="button" style=" flex-grow: 1;
+      text-align: center;" aria-expanded="false">Années</a>
+      <ul class="dropdown-menu menuin">
         <li><a class="dropdown-item" href="accueill.html">Année 1</a></li>
         <li><a class="dropdown-item" href="accueill2.html">Année 2</a></li>
         </ul>
     </li>
     <li class="nav-item dropdown ">
-      <a class="nav-link active col" href="accueill.html" role="button" >Accueil</a>
+      <a class="nav-link active col" href="accueill.html"  role="button" >Accueil</a>
       
     </li>
     <li class="nav-item dropdown">
-      <a class="nav-link col" href="match.html" role="button" >prochain matchs</a>
+      <a class="nav-link col"  href="match.html" role="button" >prochain matchs</a>
       
     </li>
     <li class="nav-item">
@@ -42,8 +59,8 @@
     </li>
   
   </ul>
-</div>
-  </div>
+
+
   <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center w-100">
     
     <!-- Then put toasts within -->
