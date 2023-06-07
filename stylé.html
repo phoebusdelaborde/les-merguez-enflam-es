@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>stylé</title>
+</head>
+<body>
+    <div class="box">
+<span style="--i:1;"><img src="DSC01687.JPG"></span>
+<span style="--i:2;"><img src="DSC02019 copy.JPG"></span>
+<span style="--i:3;"><img src="DSC02019.JPG"></span>
+<span style="--i:4;"><img src="DSC02567.JPG"></span>
+<span style="--i:5;"><img src="DSC03198.JPG"></span>
+<span style="--i:6;"><img src="DSC03243.JPG"></span>
+<span style="--i:7;"><img src="DSC03594.JPG"></span>
+<span style="--i:8;"><img src="1 (8).JPG"></span>
+    </div>
+   
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    min-height: 100vh;
+}
+.box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style:preserve-3d ;
+    animation: animate 20s linear infinite;
+}
+@keyframes animate {
+    0%{
+transform: perspective(1000px) rotateX(0deg) rotate(35deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateX(360deg) rotate(35deg);
+            }
+}
+.box span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin:center ;
+    transform-style: preserve-3d;
+    transform: rotateX(calc(var(--i) * 45deg)) translateZ(300px);
+}
+.box span img{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+    </style>
+</body>
+</html>
