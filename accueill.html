@@ -21,7 +21,10 @@
   padding: 0;
   display: flex;
 }
-
+.container-fluid{
+  display:flex ;
+  flex-wrap: nowrap;
+}
 
 .menu li {
   flex-grow: 1;
@@ -36,7 +39,7 @@
   <div class="row">
   <ul class="nav nav-tabs menu" >
     <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle col" data-bs-toggle="dropdown" href="#" role="button" style=" flex-grow: 1;
+      <a class="nav-link dropdown-toggle col-sm-3" data-bs-toggle="dropdown" href="#" role="button" style=" flex-grow: 1;
       text-align: center;" aria-expanded="false">Années</a>
       <ul class="dropdown-menu menuin">
         <li><a class="dropdown-item" href="accueill.html">Année 1</a></li>
@@ -44,15 +47,15 @@
         </ul>
     </li>
     <li class="nav-item dropdown ">
-      <a class="nav-link active col" href="accueill.html"  role="button" >Accueil</a>
+      <a class="nav-link active col-sm-3" href="accueill.html"  role="button" >Accueil</a>
       
     </li>
     <li class="nav-item dropdown">
-      <a class="nav-link col"  href="match.html" role="button" >prochain matchs</a>
+      <a class="nav-link col-sm-3"  href="match.html" role="button" >prochain matchs</a>
       
     </li>
     <li class="nav-item">
-      <a class="nav-link dropdown-toggle col" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">resultats</a>
+      <a class="nav-link dropdown-toggle col-sm-3" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">resultats</a>
       <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="photo.html">Photos</a></li>
         <li><a class="dropdown-item" href="resulta.html">Video</a></li>
