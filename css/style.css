@@ -1,13 +1,5 @@
-.flexbox{
-    display:flex;
-    margin:10px;
-    height:80px;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #17171a;
-    font-size: 25px;
-  }
-.i{font-size:50px}
+
+
 .class{
 width:500px;
 }
@@ -19,21 +11,12 @@ width:500px;
 
 
 
-.container {
-  display: grid;
-  width: 1825px;
-  height: 600px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: .2rem; 
-}
 
 
-.container div {
-  border: 1px solid black;
-  width: 500px auto;
-  height: 500px auto;
-}
+
+
+
+
 .un{
   grid-column: 1 / 3;
   grid-row:1 / 2;
